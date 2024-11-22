@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Cocina</title>
+  <link rel="stylesheet" href="./css/formu.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Test de Cocina</h1>
+    <p>Demuestra cuánto sabes sobre el mundo culinario</p>
+    <form id="cookingTest">
+      <!-- Pregunta 1 -->
+      <fieldset>
+        <legend>1. ¿Cuál es el ingrediente principal de un risotto?</legend>
+        <label><input type="radio" name="q1" value="correcto" required> Arroz</label>
+        <label><input type="radio" name="q1" value="incorrecto"> Pasta</label>
+        <label><input type="radio" name="q1" value="incorrecto"> Patata</label>
+      </fieldset>
+
+      <!-- Pregunta 2 -->
+      <fieldset>
+        <legend>2. Selecciona los ingredientes de una salsa bechamel:</legend>
+        <label><input type="checkbox" name="q2" value="correcto"> Harina</label>
+        <label><input type="checkbox" name="q2" value="correcto"> Mantequilla</label>
+        <label><input type="checkbox" name="q2" value="incorrecto"> Tomate</label>
+        <label><input type="checkbox" name="q2" value="correcto"> Leche</label>
+      </fieldset>
+
+      <!-- Pregunta 3 -->
+      <fieldset>
+        <legend>3. ¿De qué país es originaria la paella?</legend>
+        <label><input type="radio" name="q3" value="correcto" required> España</label>
+        <label><input type="radio" name="q3" value="incorrecto"> Italia</label>
+        <label><input type="radio" name="q3" value="incorrecto"> México</label>
+      </fieldset>
+
+      <!-- Pregunta 4 -->
+      <fieldset>
+        <legend>4. ¿Cuánto equivale una taza en mililitros aproximadamente?</legend>
+        <label><input type="radio" name="q4" value="incorrecto" required> 150 ml</label>
+        <label><input type="radio" name="q4" value="correcto"> 240 ml</label>
+        <label><input type="radio" name="q4" value="incorrecto"> 300 ml</label>
+      </fieldset>
+
+      <!-- Pregunta 5 -->
+      <label for="q5">5. ¿Cuál es el plato más difícil que has cocinado?</label>
+      <textarea id="q5" name="q5" rows="4" placeholder="Describe tu experiencia"></textarea>
+
+      <!-- Botón de envío -->
+      <div class="buttons">
+        <button type="submit">Enviar respuestas</button>
+        <button type="reset">Restablecer</button>
+      </div>
+    </form>
+  </div>
+  <script src="./js/logicaF.js"></script>
+</body>
+</html>
+
